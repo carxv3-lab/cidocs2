@@ -106,24 +106,37 @@ RESIDENTES = {
     "Valdez Valdez Ricardo Antonio": {
         "grado": "R1", "tesis": "Por definir",
         "vacaciones": [("2026-07-06", "2026-07-17"), ("2027-02-01", "2027-02-12")], "rotaciones": {}
+    },
+    # Entidad de Sesiones Generales / Todos
+    "Todos los Residentes": {
+        "grado": "TR", "tesis": "N/A",
+        "vacaciones": [], "rotaciones": {}
     }
 }
 
-# Lista de clases (Muestra representativa basada en el programa)
+# Lista de clases (Muestra representativa basada en el programa con los viernes agregados)
 CLASES = [
-    {"fecha": "2026-03-03", "tema": "Historia de la cirugía", "ponente": "López Félix Jesús Arturo", "modulo": "Introducción"},
-    {"fecha": "2026-03-04", "tema": "Asepsia y antisepsia", "ponente": "Portugal Beltran Emma", "modulo": "Introducción"},
-    {"fecha": "2026-03-12", "tema": "Líquidos y electrolitos en el paciente quirúrgico", "ponente": "López Félix Jesús Arturo", "modulo": "Bases Quirúrgicas"},
-    {"fecha": "2026-03-17", "tema": "Nutrición en cirugía", "ponente": "Luna Borboa Jorge Luis", "modulo": "Bases Quirúrgicas"},
-    {"fecha": "2026-03-24", "tema": "Anatomía anterior y posterior de la región inguinal", "ponente": "Almanza Orduño Athmir Antonio", "modulo": "Pared Abdominal"},
-    {"fecha": "2026-03-25", "tema": "Fisiopatología y Genesis herniaria", "ponente": "Villegas Rodríguez José", "modulo": "Pared Abdominal"},
-    {"fecha": "2026-03-26", "tema": "Hernia ventral primaria", "ponente": "Rendon Sánchez Manuel", "modulo": "Pared Abdominal"},
-    {"fecha": "2026-04-14", "tema": "Hernia inguinal", "ponente": "Valdez Valdez Ricardo Antonio", "modulo": "Pared Abdominal"},
-    {"fecha": "2026-04-15", "tema": "Técnica quirúrgica reparación Onlay", "ponente": "Soto Valle José Emaús", "modulo": "Pared Abdominal"},
-    {"fecha": "2026-04-28", "tema": "Manejo abierto y mínima invasión en hernia inguinal", "ponente": "Cordero Medina Marielos", "modulo": "Pared Abdominal"},
-    {"fecha": "2026-05-05", "tema": "Anatomía quirúrgica y fisiología del esófago", "ponente": "Portugal Beltran Emma", "modulo": "Cirugía digestiva"},
-    {"fecha": "2026-05-06", "tema": "ERGE y esófago de Barrett", "ponente": "Rendon Sánchez Manuel", "modulo": "Cirugía digestiva"},
-    {"fecha": "2026-06-17", "tema": "Apendicitis aguda", "ponente": "Maldonado Guardado Diana Guadalupe", "modulo": "Cirugía digestiva"}
+    {"fecha": "2026-03-03", "tema": "Historia de la cirugía", "ponente": "López Félix Jesús Arturo", "modulo": "Introducción", "tipo": "Clase"},
+    {"fecha": "2026-03-04", "tema": "Asepsia y antisepsia", "ponente": "Portugal Beltran Emma", "modulo": "Introducción", "tipo": "Clase"},
+    {"fecha": "2026-03-06", "tema": "Destreza quirúrgica", "ponente": "Todos los Residentes", "modulo": "Introducción", "tipo": "Taller/Destreza"},
+    {"fecha": "2026-03-12", "tema": "Líquidos y electrolitos en el paciente quirúrgico", "ponente": "López Félix Jesús Arturo", "modulo": "Bases Quirúrgicas", "tipo": "Clase"},
+    {"fecha": "2026-03-13", "tema": "Nutrición en cirugía", "ponente": "Luna Borboa Jorge Luis", "modulo": "Bases Quirúrgicas", "tipo": "Clase"},
+    {"fecha": "2026-03-17", "tema": "Nutrición en cirugía", "ponente": "Luna Borboa Jorge Luis", "modulo": "Bases Quirúrgicas", "tipo": "Clase"},
+    {"fecha": "2026-03-20", "tema": "Hernia incisional y técnicas de preparación", "ponente": "Todos los Residentes", "modulo": "Pared Abdominal", "tipo": "Caso Clínico"},
+    {"fecha": "2026-03-24", "tema": "Anatomía anterior y posterior de la región inguinal", "ponente": "Almanza Orduño Athmir Antonio", "modulo": "Pared Abdominal", "tipo": "Clase"},
+    {"fecha": "2026-03-25", "tema": "Fisiopatología y Genesis herniaria", "ponente": "Villegas Rodríguez José", "modulo": "Pared Abdominal", "tipo": "Clase"},
+    {"fecha": "2026-03-26", "tema": "Hernia ventral primaria", "ponente": "Rendon Sánchez Manuel", "modulo": "Pared Abdominal", "tipo": "Clase"},
+    {"fecha": "2026-03-27", "tema": "Revisión de la literatura hernias", "ponente": "Todos los Residentes", "modulo": "Pared Abdominal", "tipo": "Sesión ABP"},
+    {"fecha": "2026-04-10", "tema": "Caso Clínico / ABP", "ponente": "Todos los Residentes", "modulo": "Pared Abdominal", "tipo": "Sesión ABP"},
+    {"fecha": "2026-04-14", "tema": "Hernia inguinal", "ponente": "Valdez Valdez Ricardo Antonio", "modulo": "Pared Abdominal", "tipo": "Clase"},
+    {"fecha": "2026-04-15", "tema": "Técnica quirúrgica reparación Onlay", "ponente": "Soto Valle José Emaús", "modulo": "Pared Abdominal", "tipo": "Clase"},
+    {"fecha": "2026-04-17", "tema": "Imagen en el estudio de la hernia", "ponente": "Todos los Residentes", "modulo": "Pared Abdominal", "tipo": "Caso Clínico"},
+    {"fecha": "2026-04-28", "tema": "Manejo abierto y mínima invasión en hernia inguinal", "ponente": "Cordero Medina Marielos", "modulo": "Pared Abdominal", "tipo": "Clase"},
+    {"fecha": "2026-04-30", "tema": "Cierre de pared y prevención de hernia incisional", "ponente": "Todos los Residentes", "modulo": "Pared Abdominal", "tipo": "Taller/Destreza"},
+    {"fecha": "2026-05-05", "tema": "Anatomía quirúrgica y fisiología del esófago", "ponente": "Portugal Beltran Emma", "modulo": "Cirugía digestiva", "tipo": "Clase"},
+    {"fecha": "2026-05-06", "tema": "ERGE y esófago de Barrett", "ponente": "Rendon Sánchez Manuel", "modulo": "Cirugía digestiva", "tipo": "Clase"},
+    {"fecha": "2026-05-08", "tema": "Indicaciones y manejo de la ERGE y hernia hiatal", "ponente": "Todos los Residentes", "modulo": "Cirugía digestiva", "tipo": "Sesión ABP"},
+    {"fecha": "2026-06-17", "tema": "Apendicitis aguda", "ponente": "Maldonado Guardado Diana Guadalupe", "modulo": "Cirugía digestiva", "tipo": "Clase"}
 ]
 
 # ==========================================
@@ -197,18 +210,24 @@ if vista == "🏠 Inicio (Dashboard)":
     with col_c1:
         st.success("### 📚 Clase de Hoy")
         if clase_hoy:
+            tipo = clase_hoy.get('tipo', 'Clase')
+            icono = "📖" if tipo == "Clase" else "🧩" if tipo == "Sesión ABP" else "🏥" if tipo == "Caso Clínico" else "🪡"
+            st.markdown(f"**Tipo:** {icono} {tipo}")
             st.markdown(f"**Tema:** {clase_hoy['tema']}")
             st.markdown(f"**Módulo:** {clase_hoy['modulo']}")
-            st.markdown(f"**Imparte:** 👨‍⚕️ {clase_hoy['ponente']} ({RESIDENTES[clase_hoy['ponente']]['grado']})")
+            st.markdown(f"**Imparte:** 👨‍⚕️ {clase_hoy['ponente']} ({RESIDENTES.get(clase_hoy['ponente'], {}).get('grado', 'TR')})")
         else:
             st.info("No hay clase programada para el día de hoy.")
 
     with col_c2:
         st.info("### 🔜 Próxima Clase")
         if proxima_clase:
+            tipo = proxima_clase.get('tipo', 'Clase')
+            icono = "📖" if tipo == "Clase" else "🧩" if tipo == "Sesión ABP" else "🏥" if tipo == "Caso Clínico" else "🪡"
             st.markdown(f"**Fecha:** {proxima_clase['fecha_date'].strftime('%d de %B, %Y')}")
+            st.markdown(f"**Tipo:** {icono} {tipo}")
             st.markdown(f"**Tema:** {proxima_clase['tema']}")
-            st.markdown(f"**Imparte:** 👨‍⚕️ {proxima_clase['ponente']} ({RESIDENTES[proxima_clase['ponente']]['grado']})")
+            st.markdown(f"**Imparte:** 👨‍⚕️ {proxima_clase['ponente']} ({RESIDENTES.get(proxima_clase['ponente'], {}).get('grado', 'TR')})")
         else:
             st.warning("No hay clases futuras registradas.")
 
@@ -240,7 +259,8 @@ if vista == "🏠 Inicio (Dashboard)":
                 elif 'Rotación' in val: return 'background-color: #fff2cc; color: black'
                 else: return 'background-color: #ccffcc; color: black'
             
-            st.dataframe(df.style.applymap(color_estado, subset=['Estado Actual']), use_container_width=True, hide_index=True)
+            # Se ha actualizado applymap() por map() para compatibilidad con Pandas
+            st.dataframe(df.style.map(color_estado, subset=['Estado Actual']), use_container_width=True, hide_index=True)
 
 
 # ==========================================
@@ -249,7 +269,8 @@ if vista == "🏠 Inicio (Dashboard)":
 elif vista == "👨‍⚕️ Perfil por Residente":
     st.title("Buscador de Residentes 🔍")
     
-    lista_nombres = list(RESIDENTES.keys())
+    # Excluir la opción general del filtro
+    lista_nombres = [nombre for nombre in RESIDENTES.keys() if nombre != "Todos los Residentes"]
     residente_seleccionado = st.selectbox("Selecciona un residente:", lista_nombres)
     
     if residente_seleccionado:
@@ -284,9 +305,14 @@ elif vista == "👨‍⚕️ Perfil por Residente":
         st.markdown("### 🎓 Clases a impartir y Sesiones Generales")
         
         # Mostramos las clases donde el ponente sea él, o donde participen TODOS (como los viernes)
-        clases_residente = [c for c in CLASES if c["ponente"] == residente_seleccionado or c["ponente"] == "Todos los Residentes"]
+        clases_residente = [c for c in CLASES if c.get("ponente") == residente_seleccionado or c.get("ponente") == "Todos los Residentes"]
         if clases_residente:
-            df_clases = pd.DataFrame(clases_residente)[["fecha", "tipo", "modulo", "tema", "ponente"]]
+            df_clases = pd.DataFrame(clases_residente)
+            # Asegurarse de que exista la columna tipo por si alguna clase vieja no la tiene
+            if 'tipo' not in df_clases.columns:
+                df_clases['tipo'] = 'Clase'
+                
+            df_clases = df_clases[["fecha", "tipo", "modulo", "tema", "ponente"]]
             df_clases.columns = ["Fecha", "Tipo", "Módulo", "Tema", "Ponente"]
             st.table(df_clases)
         else:
@@ -299,7 +325,12 @@ elif vista == "📅 Calendario de Clases":
     st.title("Calendario Completo de Clases Académicas")
     st.write("Temario de unidades didácticas y expositores")
     
-    df_all_clases = pd.DataFrame(CLASES)[["fecha", "tipo", "modulo", "tema", "ponente"]]
+    df_all_clases = pd.DataFrame(CLASES)
+    # Evitar KeyErrors si falta el tipo en algún dict en el futuro
+    if 'tipo' not in df_all_clases.columns:
+        df_all_clases['tipo'] = 'Clase'
+        
+    df_all_clases = df_all_clases[["fecha", "tipo", "modulo", "tema", "ponente"]]
     df_all_clases.columns = ["Fecha", "Tipo", "Módulo", "Tema de la Clase", "Ponente"]
     
     # Añadir grado al df
